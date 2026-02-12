@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Paper Title | Project Page</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- ===================== Title / Authors / Affiliations ===================== -->
+    <header class="hero">
+      <h1 class="title">你的论文标题（Paper Title）</h1>
+
+      <p class="authors">
+        作者A<sup>1</sup>, 作者B<sup>2</sup>, 作者C<sup>1</sup>
+      </p>
+
+      <p class="affiliations">
+        <sup>1</sup>单位1（Affiliation 1） &nbsp;&nbsp;
+        <sup>2</sup>单位2（Affiliation 2）
+      </p>
+
+      <p class="venue">
+        <span class="badge">Conference / Journal 2026</span>
+      </p>
+
+      <!-- Buttons -->
+      <div class="links">
+        <a class="btn" href="static/paper.pdf" target="_blank" rel="noopener">Paper (PDF)</a>
+        <a class="btn" href="https://github.com/你的用户名/你的仓库" target="_blank" rel="noopener">Code</a>
+        <a class="btn" href="#video">Video</a>
+        <a class="btn btn-secondary" href="#citation">BibTeX</a>
+      </div>
+    </header>
+
+    <!-- ===================== Video Demo ===================== -->
+    <section id="video" class="section">
+      <h2>Demo Video</h2>
+      <div class="video-wrapper">
+        <!-- 把 YOUR_YOUTUBE_ID 换成你的 YouTube 视频 ID -->
+        <iframe
+          src="https://www.youtube.com/embed/m--bvcDmTHc"
+          title="Demo Video"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+
+    <!-- ===================== Abstract ===================== -->
+    <section class="section">
+      <h2>Abstract</h2>
+      <div class="grid2">
+        <div class="figure">
+          <img src="assets/images/teaser.png" alt="Teaser Figure" />
+          <p class="caption">图 1：一句话解释这张图（Teaser）。</p>
+        </div>
+        <div class="text">
+          <p>
+            在这里放你的摘要文字。建议 6–10 行以内，强调：
+            <b>问题是什么</b>、<b>你做了什么</b>、<b>为什么有效</b>、<b>结果亮点</b>。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Method ===================== -->
+    <section class="section">
+      <h2>Method</h2>
+      <div class="grid2">
+        <div class="figure">
+          <img src="assets/images/method.png" alt="Method Figure" />
+          <p class="caption">图 2：方法结构图 / Pipeline。</p>
+        </div>
+        <div class="text">
+          <p>
+            在这里放 method 的简述（不要写成论文长段落），推荐写法：
+          </p>
+          <ul>
+            <li><b>核心思路</b>：一句话概括你的关键机制。</li>
+            <li><b>模块 1</b>：做什么、输入输出是什么。</li>
+            <li><b>模块 2</b>：做什么、为什么这样设计。</li>
+            <li><b>训练/推理</b>：一句话说明策略（可选）。</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Citation ===================== -->
+    <section id="citation" class="section">
+      <h2>Citation</h2>
+      <p>如果对你有帮助，欢迎引用：</p>
+
+      <pre class="bibtex"><code>@inproceedings{yourkey2026,
+  title     = {Your Paper Title},
+  author    = {Author A and Author B and Author C},
+  booktitle = {Conference Name},
+  year      = {2026}
+}</code></pre>
+
+      <p class="footnote">（你也可以把 BibTeX 单独放到 static/bibtex.txt，然后在这里链接。）</p>
+    </section>
+
+    <footer class="footer">
+      <p>© 2026 Your Lab / Team · Built with GitHub Pages</p>
+    </footer>
+
+  </div>
+</body>
+</html>
