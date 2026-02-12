@@ -91,17 +91,25 @@ and flexibility of our approach.
           <img src="assets/images/fig2.png" alt="Method Figure" />
           <p class="caption">Figure2. Pipeline</p>
         </div>
-        <div class="text">
-          <p>
-            在这里放 method 的简述（不要写成论文长段落），推荐写法：
-          </p>
-          <ul>
-            <li><b>核心思路</b>：一句话概括你的关键机制。</li>
-            <li><b>模块 1</b>：做什么、输入输出是什么。</li>
-            <li><b>模块 2</b>：做什么、为什么这样设计。</li>
-            <li><b>训练/推理</b>：一句话说明策略（可选）。</li>
-          </ul>
-        </div>
+<div class="text">
+  <p>
+    VF-Editor performs native 3D Gaussian editing by predicting explicit attribute variations instead of relying on multi-view 2D reconstruction.
+  </p>
+  <ul>
+    <li>
+      <b>Core idea</b>: Reformulate 3D editing as a feed-forward variation prediction problem, enabling consistent and flexible edits directly in 3D Gaussian space.
+    </li>
+    <li>
+      <b>Variation Field Generator</b>: Encodes the input 3D Gaussians and text instruction into a unified latent variation field using transformer-based cross-attention.
+    </li>
+    <li>
+      <b>Parallel Iterative Decoding</b>: Efficiently decodes per-Gaussian changes in position, scale, opacity, color, and rotation, allowing fine-grained and real-time editing.
+    </li>
+    <li>
+      <b>Knowledge Distillation</b>: Trains the predictor by distilling diverse 2D editing priors (diffusion-based editors) into 3D through rendered supervision.
+    </li>
+  </ul>
+</div>
       </div>
     </section>
 
