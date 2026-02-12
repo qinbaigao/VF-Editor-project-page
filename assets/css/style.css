@@ -79,12 +79,12 @@ body {
   font-size: 22px;
 }
 
-.grid2 {
+/* .grid2 {
   display: grid;
   grid-template-columns: 1.2fr 1fr;
   gap: 18px;
   align-items: start;
-}
+} */
 
 .figure img {
   width: 100%;
@@ -136,3 +136,17 @@ body {
   .grid2 { grid-template-columns: 1fr; }
   .title { font-size: 28px; }
 }
+
+
+.grid2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* .figure img {
+  width: 100%;
+  max-width: 900px;
+  display: block;
+  margin: 0 auto;
+} */

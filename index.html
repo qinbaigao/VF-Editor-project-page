@@ -52,17 +52,22 @@
     <!-- ===================== Abstract ===================== -->
     <section class="section">
       <h2>Abstract</h2>
+
       <div class="grid2">
         <div class="figure">
-          <img src="assets/images/fig1.pdf" alt="Teaser Figure" />
-          <p class="caption">VF-Editor is a native editing method for 3D Gaussian Splatting across multiple scenes
-and instructions.</p>
+          <img src="assets/images/fig1.png" alt="Teaser Figure" />
+          <p class="caption">
+            Figure1. VF-Editor is a native editing method for 3D Gaussian Splatting across multiple scenes and instructions.
+          </p>
         </div>
+
         <div class="text">
           <p>
-            Indirect editing methods for 3D Gaussian Splatting (3DGS) have recently witnessed significant advancements. These approaches operate by first applying edits
-in the rendered 2D space and subsequently projecting the modifications back into 3D. However, this paradigm inevitably introduces cross-view inconsistencies and
-constrains both the flexibility and efficiency of the editing process. To address these challenges, we present VF-Editor, which enables native editing of Gaussian primitives by predicting attribute variations in a feedforward manner. To accurately and
+Indirect editing methods for 3D Gaussian Splatting (3DGS) have recently witnessed significant advancements. These approaches operate by first applying edits
+in the rendered 2D space and subsequently projecting the modifications back into
+3D. <i>However, this paradigm inevitably introduces cross-view inconsistencies and
+constrains both the flexibility and efficiency of the editing process.</i> To address these
+challenges, we present <b>VF-Editor</b>, which enables native editing of Gaussian primitives by predicting attribute variations in a feedforward manner. To accurately and
 efficiently estimate these variations, we design a novel variation predictor distilled
 from 2D editing knowledge. The predictor encodes the input to generate a variation
 field and employs two learnable, parallel decoding functions to iteratively infer
@@ -77,13 +82,14 @@ and flexibility of our approach.
       </div>
     </section>
 
+
     <!-- ===================== Method ===================== -->
     <section class="section">
       <h2>Method</h2>
       <div class="grid2">
         <div class="figure">
-          <img src="assets/images/method.png" alt="Method Figure" />
-          <p class="caption">图 2：方法结构图 / Pipeline。</p>
+          <img src="assets/images/fig2.png" alt="Method Figure" />
+          <p class="caption">Figure2. Pipeline</p>
         </div>
         <div class="text">
           <p>
