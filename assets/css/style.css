@@ -1,3 +1,16 @@
+  /* 仅针对 links 容器内的 secondary 按钮生效，避免全局污染 */
+  .links .btn-secondary {
+    background-color: rgba(108, 117, 125, 0.3); /* 最后一个参数 0.2 是透明度，越小越浅 */
+    color: #6c757d; /* 保持文字颜色足够深以方便阅读 */
+    border: 1px solid rgba(108, 117, 125, 0.3); /* 给一个淡淡的边框增加质感 */
+  }
+
+  /* 悬停效果：稍微加深一点 */
+  .links .btn-secondary:hover {
+    background-color: rgba(108, 117, 125, 0.3);
+    color: #495057;
+  }
+
 :root {
   --text: #111;
   --muted: #555;
@@ -65,9 +78,9 @@ body {
   font-size: 14px;
 }
 
-.btn-secondary {
+/* .btn-secondary {
   background: #444;
-}
+} */
 
 .section {
   padding: 18px 0;
@@ -78,6 +91,8 @@ body {
   margin: 0 0 12px;
   font-size: 22px;
 }
+
+
 
 /* .grid2 {
   display: grid;
